@@ -1,0 +1,110 @@
+body{
+    background-color: rgb(227, 227, 227);
+}
+
+p{
+    letter-spacing: 3px;
+    font-size: 30px;
+}
+
+img{
+    width: 300px;
+    height: 300px;
+}
+
+.image{
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.image:hover{
+    transform: scale(1.2);
+}
+
+.image:active{
+    transform: scale(0.9);
+}
+
+
+.prnimage{
+    width: 270px;
+    height: 160px;
+    cursor: pointer;
+    transition: transform 0.2s;
+    border-radius: 30px;
+    padding: 10px;
+}
+
+.prnimage:hover{
+    transform: scale(1.2);
+}
+
+.prnimage:active{
+    transform: scale(0.9);
+}
+
+figcaption{
+    padding: 20px 15px;
+    font-size: larger;
+    text-align: center;
+    font-weight:bold;
+}
+
+
+
+@media screen and (max-width: 1200px) {
+    .prnimage{
+        width: 180px;
+        height: 120px;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .prnimage{
+        width: 140px;
+        height: 100px;
+    }
+  }
+
+  @media screen and (max-width: 375px) {
+    .prnimage{
+        width: 48%;
+        margin: 1%;
+    }
+    .image{
+        width: 80px;
+        height: 80px;
+    }
+  }
+
+  
+@media screen and (max-width: 425px) {
+    .prnimage{
+        width: 45%;
+        margin: 1%;
+    }
+    .image{
+        width: 80px;
+        height: 80px;
+    }
+  }
+
+
+  @media (max-width: 320px) {
+    .prnimage {
+      width: 48%;
+      margin: 1%;
+    }
+
+    p{
+        font-size: 25px;
+    }
+
+    .image{
+        width: 80px;
+        height: 80px;
+    }
+  }
+  
