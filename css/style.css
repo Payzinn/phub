@@ -1,5 +1,6 @@
 body{
     background-color: rgb(227, 227, 227);
+    overflow: hidden;
 }
 
 p{
@@ -8,8 +9,8 @@ p{
 }
 
 img{
-    width: 300px;
-    height: 300px;
+    width: 400px;
+    height: 350px;
 }
 
 .image{
@@ -52,30 +53,86 @@ figcaption{
     font-weight:bold;
 }
 
+.modal-body{
+    display: flex;
+    justify-content: center;
+}
+
+h1{
+    text-align: center;
+    color: #000;
+}
+
+
+.respng {
+   width: 200px;
+   height: 150px;
+  }
+
+h2{
+    text-align: justify;
+    text-align: center;
+    font-size: 30px;
+}
+
+a{ 
+    width: 80%;
+    border-radius: 15px;
+    background: -webkit-linear-gradient(171deg, #121212,#181818);
+    background: linear-gradient(171deg, #121212,#181818);
+    text-decoration: none;   
+    height: 90%;
+    text-align: center;
+    padding: 5px;
+    color: white;
+    margin: 10%;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: transform 0.2s;
+    font-size: 20px;
+}
+  
+a:hover{
+    transform: scale(1.2);
+}
+
+a:active{
+    transform: scale(0.9);
+}
 
 
 @media screen and (max-width: 1200px) {
     .prnimage{
-        width: 180px;
-        height: 120px;
+        width: 48%;
+        margin: 1%;
     }
   }
 
   @media screen and (max-width: 768px) {
     .prnimage{
-        width: 140px;
-        height: 100px;
+        width: 48%;
+        margin: 1%;
     }
   }
 
   @media screen and (max-width: 375px) {
     .prnimage{
         width: 48%;
+        height: 60%;
         margin: 1%;
     }
     .image{
         width: 80px;
         height: 80px;
+    }
+    .tight-col {
+        padding-left: 5%;
+        padding-right: 5%;
+      }
+      img{
+        width: 100%;
+        height: 80%;
     }
   }
 
@@ -89,12 +146,19 @@ figcaption{
         width: 80px;
         height: 80px;
     }
+
+    img{
+        width: 60%;
+        height: 40%;
+    }
+
   }
 
 
   @media (max-width: 320px) {
     .prnimage {
       width: 48%;
+      height: 70%;
       margin: 1%;
     }
 
@@ -105,6 +169,10 @@ figcaption{
     .image{
         width: 80px;
         height: 80px;
+    }
+    img{
+        width: 80%;
+        height: 60%;
     }
   }
   
