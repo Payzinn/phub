@@ -12,6 +12,7 @@ img{
     height: 350px;
 }
 
+
 .image{
     width: 100px;
     height: 100px;
@@ -28,13 +29,16 @@ img{
 }
 
 
+
 .prnimage{
+    
     width: 270px;
     height: 160px;
     cursor: pointer;
     transition: transform 0.2s;
     border-radius: 30px;
     padding: 10px;
+    margin-bottom: 5%;
 }
 
 .prnimage:hover{
